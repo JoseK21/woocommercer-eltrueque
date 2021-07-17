@@ -851,11 +851,21 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			}
 
 			.custom-footer {
-				background-image: url("https://images.unsplash.com/photo-1562587828-de93c5454a17?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
-				height: 200px;
+				background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+				padding: 0;
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover; 
+				text-align: center;
+			}
+
+			.custom-full-column div:first-child {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: nowrap;
+				justify-content: center;
+				align-items: center;
+				align-content: stretch;
 			}
 
 			.site-footer a:not(.button):not(.components-button) {
@@ -876,6 +886,15 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 
 			.page-template-template-homepage.has-post-thumbnail .type-page.has-post-thumbnail .entry-content {
 				color: ' . $storefront_theme_mods['hero_text_color'] . ';
+			}
+
+			@media screen and ( max-width: 768px ) {
+				.custom-full-column div:first-child {
+					display: block;
+				}
+				.custom-footer {
+					padding-bottom: 2rem;
+				}
 			}
 
 			@media screen and ( min-width: 768px ) {
