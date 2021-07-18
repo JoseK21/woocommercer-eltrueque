@@ -176,13 +176,7 @@ if ( ! function_exists( 'storefront_header_widget_region' ) ) {
 	}
 }
 
-if ( ! function_exists( 'storefront_site_branding' ) ) {
-	/**
-	 * Site branding wrapper and display
-	 *
-	 * @since  1.0.0
-	 * @return void
-	 */
+/* if ( ! function_exists( 'storefront_site_branding' ) ) {
 	function storefront_site_branding() {
 		?>
 		<div class="site-branding">
@@ -190,7 +184,7 @@ if ( ! function_exists( 'storefront_site_branding' ) ) {
 		</div>
 		<?php
 	}
-}
+} */
 
 if ( ! function_exists( 'storefront_site_title_or_logo' ) ) {
 	/**
