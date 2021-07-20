@@ -911,7 +911,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 					background-color: ' . storefront_adjust_color_brightness( $storefront_theme_mods['header_background_color'], -15 ) . ';
 				}
 				.main-navigation ul.nav-menu {
-					font-size: 20px;
+					// font-size: 20px;
 				}
 				.site-header {
 					border-bottom-color: ' . storefront_adjust_color_brightness( $storefront_theme_mods['header_background_color'], -15 ) . ';

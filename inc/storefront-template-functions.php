@@ -496,17 +496,11 @@ if ( ! function_exists( 'storefront_post_meta' ) ) {
 	}
 }
 
-if ( ! function_exists( 'storefront_edit_post_link' ) ) {
-	/**
-	 * Display the edit link
-	 *
-	 * @since 2.5.0
-	 */
+/* if ( ! function_exists( 'storefront_edit_post_link' ) ) {
 	function storefront_edit_post_link() {
 		edit_post_link(
 			sprintf(
 				wp_kses(
-					/* translators: %s: Name of current post. Only visible to screen readers */
 					__( 'Edit <span class="screen-reader-text">%s</span>', 'storefront' ),
 					array(
 						'span' => array(
@@ -520,7 +514,7 @@ if ( ! function_exists( 'storefront_edit_post_link' ) ) {
 			'</div>'
 		);
 	}
-}
+} */
 
 if ( ! function_exists( 'storefront_post_taxonomy' ) ) {
 	/**
