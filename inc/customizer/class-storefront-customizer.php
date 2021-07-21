@@ -851,7 +851,7 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			}
 
 			.custom-footer {
-				background-image: url("https://images.unsplash.com/photo-1493673272479-a20888bcee10?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80");
+				background-image: url('. get_template_directory_uri() . '/assets/images/el-trueque/Footer.png);
 				padding: 0;
 				background-position: center;
 				background-repeat: no-repeat;
