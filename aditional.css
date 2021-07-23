@@ -1,0 +1,132 @@
+.custom-header {
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.related.products {
+    display: none !important;
+}
+
+#woocommerce-product-search-field-0 {
+    border-radius: 3rem;
+    outline: none !important;
+}
+
+.swiper-slide-image {
+    margin: auto;
+}
+
+.grid2x2 {
+    display: grid;
+    height: 300px;
+    grid-template-columns: auto 6px 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas: "logo logo logo" "consiga blank visitenos" "feria blank visitenos";
+    font-size: 12px;
+    color: #ffffff;
+    position: absolute;
+    bottom: 40px;
+    z-index: -1;
+}
+
+.grid2x2 div {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    grid-area: logo;
+}
+
+#consiga {
+    grid-area: consiga;
+    font-size: 32px;
+    line-height: normal;
+    font-weight: 700;
+    padding-right: 10px;
+}
+
+#feria {
+    grid-area: feria;
+    font-size: 27px;
+    line-height: normal;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#blank {
+    grid-area: blank;
+    background-color: white;
+}
+
+#visitenos {
+    padding-left: 10px;
+    grid-area: visitenos;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 22px;
+    padding-right: 12px;
+}
+
+#visitenos p {
+    margin: 0;
+    line-height: normal;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#menu-menu-eltrueque a {
+    outline: none !important;
+}
+
+#menu-menu-mobile a {
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas: "logo" "consiga" "feria" "blank", "visitenos";
+    }
+    #logo {
+        justify-content: center;
+    }
+}
+
+@media (min-width: 768px) {
+    #site-navigation {
+        width: 100% !important;
+    }
+    #menu-menu-eltrueque a {
+        padding: 0.618em 1em;
+        background: transparent;
+    }
+    .custom-site-search {
+        float: left !important;
+    }
+    #menu-menu-eltrueque {
+        font-size: 18px;
+        border-bottom: 3px solid #fbfbfb!important;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        margin-left: 0em;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .grid2x2 {
+        bottom: 20px;
+        height: unset;
+    }
+    #consiga {
+        font-size: 22px;
+    }
+    #feria {
+        font-size: 20px;
+    }
+    #visitenos p {
+        font-size: 20px;
+    }
+}
