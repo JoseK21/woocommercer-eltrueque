@@ -719,8 +719,13 @@ if ( ! class_exists( 'Storefront_Customizer' ) ) :
 			button.menu-toggle:hover,
 			.handheld-navigation .dropdown-toggle {
 				color: ' . $storefront_theme_mods['header_link_color'] . ';
+				background: rgb(34,34,34);
+    			background: linear-gradient(90deg, rgba(34,34,34,1) 0%, rgba(60,60,60,1) 50%, rgba(91,91,91,1) 100%);
 			}
-
+			.handheld-navigation {
+				border-radius: 1.5rem;
+				border-top-right-radius: 0;
+			}
 			button.menu-toggle,
 			button.menu-toggle:hover {
 				border-color: ' . $storefront_theme_mods['header_link_color'] . ';

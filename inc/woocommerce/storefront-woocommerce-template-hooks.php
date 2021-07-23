@@ -81,7 +81,7 @@ add_action( 'storefront_after_footer', 'storefront_sticky_single_add_to_cart', 9
  * @see storefront_product_search()
  * @see storefront_header_cart()
  */
-add_action( 'storefront_header', 'storefront_product_search', 40 );
+add_action( 'storefront_header', 'storefront_product_search', 51 );
 /* add_action( 'storefront_header', 'storefront_header_cart', 60 ); */
 
 /**
@@ -103,3 +103,7 @@ if ( class_exists( 'WC_Brands' ) ) {
 	add_action( 'woocommerce_single_product_summary', 'storefront_woocommerce_brands_single', 4 );
 	add_action( 'homepage', 'storefront_woocommerce_brands_homepage_section', 80 );
 }
+
+
+remove_action( 'woocommerce_after_shop_loop', 'woocommerce_catalog_ordering', 10 );
+remove_action( 'woocommerce_before_shop_loop', 'woocommerce_catalog_ordering', 10 );
