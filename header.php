@@ -42,7 +42,7 @@
 					<div id="visitenos">
 						<p>VISITENOS</p>
 						<p>LOS SABADOS</p>
-						<p>6AM - 1PM</p>
+						<p>6AM - 12MD</p>
 					</div>
 				</div>
 			</div>
